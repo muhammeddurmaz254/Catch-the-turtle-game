@@ -42,8 +42,13 @@ def fxn(x, y):
     turtle_itself.hideturtle()
     global score
     score +=1
-    print(f"Score: {score}")
 
+#initial display scoreboard
+display_the_score_board(score)
+#Main game loop
+for i in range(randint(10,20)):
+    game_scene()
+game_over(i, score)
 
 turtle.mainloop()
 
